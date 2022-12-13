@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body>h1 {
+            text-align: center;
+        }
+
+        body>div {
+            display: flex;
+            flex-wrap: wrap;
+            width: 340px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid rgb(185, 184, 184);
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgb(0 0 0 / 0.4);
+        }
+
+        body>div>div:first-child {
+            width: 100%;
+            padding: 10px;
+            box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+            border-radius: 5px;
+        }
+
+        body>div>div:last-child {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            border: 1px solid rgb(223, 221, 224);
+            border-radius: 5px;
+            border-bottom: none;
+        }
+
+        button {
+            width: 70px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            background: rgb(32, 115, 238);
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.75;
+        }
+
+        button:active {
+            background-color: #B32115;
+            opacity: 1;
+        }
+
+        button,
+        input {
+            padding: 20px;
+            font-size: 140%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Számológép</h1>
+    <div>
+        <div><input type="text"></div>
+        <div></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
